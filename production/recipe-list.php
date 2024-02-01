@@ -1,5 +1,5 @@
 <?php
-require_once "../db_connect.php";
+require_once("../db_connect.php");
 $sql = "SELECT recipe.*,recipe_categories.Recipe_cate_name AS category_name FROM recipe
 JOIN recipe_categories ON recipe.Recipe_Category_ID = recipe_categories.Recipe_cate_ID
  WHERE valid=1 ORDER BY Recipe_ID ASC";
